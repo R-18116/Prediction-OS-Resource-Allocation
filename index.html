@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Predictive OS Resource Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>🚀 Predictive OS Resource Dashboard</h1>
+    <button id="toggleMode">🌙 Toggle Mode</button>
+  </header>
+
+  <section class="cards-container">
+    <div class="card" id="cpuCard">
+      <h2>CPU Usage</h2>
+      <canvas id="cpuBar"></canvas>
+      <canvas id="cpuLine"></canvas>
+    </div>
+    <div class="card" id="gpuCard">
+      <h2>GPU Usage</h2>
+      <canvas id="gpuBar"></canvas>
+      <canvas id="gpuLine"></canvas>
+    </div>
+    <div class="card" id="ramCard">
+      <h2>Memory Usage</h2>
+      <canvas id="ramBar"></canvas>
+      <canvas id="ramLine"></canvas>
+    </div>
+    <div class="card" id="diskCard">
+      <h2>Disk Usage</h2>
+      <canvas id="diskBar"></canvas>
+      <canvas id="diskLine"></canvas>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
